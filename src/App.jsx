@@ -188,7 +188,7 @@ function App() {
               title: "Tools, Platforms & Enterprise Automation",
               icon: (
                 <svg className="w-6 h-6 text-[#00b4d8]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17L17.25 21A2.121 2.121 0 0114.25 24L8.42 18.17M11.42 15.17L8.25 12m3.17 3.17L14.25 12m-6 3l-3.75 3.75a2.121 2.121 0 01-3-3L7.25 12m3.75 0L12 8.25m0 0L8.25 4.5m3.75 3.75L15.75 4.5M12 8.25L15.75 12" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
                 </svg>
               ),
               skills: ['VS Code', 'Jupyter Notebook', 'Google Colab', 'Git & GitHub', 'Microsoft Power Apps', 'Power Automate', 'SharePoint List', 'Excel VBA', 'MySQL', 'Firebase Firestore']
