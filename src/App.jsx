@@ -261,7 +261,7 @@ function App() {
                   </div>
                   <h3 className="text-3xl font-normal text-white">PM2.5 Level Classification</h3>
                   <p className="text-zinc-300 leading-relaxed font-light text-base">
-                    Developed a multi-class machine learning pipeline to classify PM2.5 into 5 levels based on Thai Air Quality Standards. Handled meteorological datasets, engineered features using trigonometric encoding, and solved severe class imbalance with Borderline-SMOTE. Achieved 92.7% Accuracy and 99.3% ROC-AUC using an Extra Trees ensemble.
+                    Developed a multi-class machine learning pipeline to classify PM2.5 into 5 levels based on Thai Air Quality Standards. Handled meteorological datasets, engineered features using trigonometric encoding, and solved severe class imbalance with Borderline-SMOTE. Through comprehensive comparative research against various ML and DL algorithms, the Extra Trees ensemble was proven to be the most effective, achieving 92.7% Accuracy and 99.3% ROC-AUC.
                   </p>
                   
                   {/* ปุ่ม Tag แบบขอบใส (Ghost Buttons) */}
@@ -309,9 +309,9 @@ function App() {
                   <div className="text-[#00b4d8] mb-4">
                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
                   </div>
-                  <h4 className="text-white font-medium mb-2">Model Optimization</h4>
+                  <h4 className="text-white font-medium mb-2">Comparative Research</h4>
                   <p className="text-zinc-400 text-sm font-light leading-relaxed">
-                    Benchmarked various ML and DL architectures using 10-fold cross-validation. The <strong className="text-zinc-200">Extra Trees (ET)</strong> ensemble model combined with Borderline-SMOTE outperformed others, achieving <strong className="text-[#00b4d8]">92.7% Accuracy</strong> and <strong className="text-[#00b4d8]">99.3% ROC-AUC</strong>.
+                    Conducted extensive research benchmarking various architectures including Decision Tree, Random Forest, Gradient Boosting, KNN, SVM, CNN, and LSTM. The <strong className="text-zinc-200">Extra Trees (ET)</strong> model outperformed all others, achieving <strong className="text-[#00b4d8]">92.7% Accuracy</strong> and <strong className="text-[#00b4d8]">99.3% ROC-AUC</strong>.
                   </p>
                 </div>
               </motion.div>
