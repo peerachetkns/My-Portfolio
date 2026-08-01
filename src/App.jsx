@@ -369,7 +369,7 @@ function App() {
       >
         <h2 className="text-4xl font-light mb-8 text-white">Let's <span className="font-semibold">Connect</span></h2>
         <p className="text-zinc-400 mb-12 font-light leading-relaxed max-w-2xl mx-auto">
-          I'm currently seeking opportunities in AI/ML, Data Engineering, and Data Science. 
+          I'm currently seeking opportunities in AI/ML Engineer, Data Engineering, and Data Science. 
           Feel free to reach out if you're looking for a dedicated engineer to join your team.
         </p>
         
