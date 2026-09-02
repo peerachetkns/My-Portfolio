@@ -55,14 +55,12 @@ function App() {
           variants={staggerContainer}
           className="flex-1 space-y-8 text-center md:text-left"
         >
-          {/* ปรับ Title ให้ครอบคลุมกว้างขึ้น */}
           <motion.p variants={fadeUp} className="text-[#00b4d8] font-light tracking-[0.3em] uppercase text-base md:text-lg">
             AI / Machine Learning Engineer
           </motion.p>
           <motion.h1 variants={fadeUp} className="text-5xl md:text-7xl font-extralight leading-tight text-white">
             Peerachet <span className="font-medium text-zinc-300">Khanitson</span>
           </motion.h1>
-          {/* ปรับ Subtitle ดึงดูดทั้ง ML, DE, DS */}
           <motion.p variants={fadeUp} className="text-zinc-300 text-lg leading-relaxed max-w-xl font-light mx-auto md:mx-0">
             AI and Machine Learning Engineer with a solid foundation in Computer Engineering. Experienced in building robust data pipelines, developing predictive models, and deploying scalable AI solutions to transform raw data into business value.
           </motion.p>
@@ -151,7 +149,6 @@ function App() {
           <p className="text-center text-zinc-400 mb-16 font-light tracking-wide">Comprehensive toolkit spanning programming languages, machine learning, data engineering, and enterprise application tools.</p>
         </motion.div>
         
-        {/* จัดหมวดหมู่ใหม่ให้มี Data Engineering + Database */}
         <motion.div 
           initial="hidden"
           whileInView="visible"
@@ -237,7 +234,7 @@ function App() {
           
           <div className="space-y-32">
             
-            {/* Project 1: FEATURED SENIOR PROJECT */}
+            {/* Project 1: FEATURED SENIOR PROJECT (PM2.5) */}
             <motion.div 
               initial="hidden"
               whileInView="visible"
@@ -245,10 +242,8 @@ function App() {
               variants={staggerContainer}
               className="group"
             >
-              {/* Header & Overview */}
               <div className="flex flex-col md:flex-row gap-12 items-start mb-12">
                 
-                {/* ด้านซ้าย - ใช้รูปภาพ */}
                 <motion.div variants={fadeUp} className="w-full md:w-[55%] aspect-video bg-[#1a1a1c] rounded-xl overflow-hidden border border-zinc-700/50 relative shadow-lg">
                   <img 
                     src="/PM2.5.png" 
@@ -257,7 +252,6 @@ function App() {
                   />
                 </motion.div>
                 
-                {/* ด้านขวา - เนื้อหาและข้อมูล */}
                 <motion.div variants={fadeUp} className="w-full md:w-[45%] space-y-5 pt-2">
                   <div className="text-xs font-semibold text-[#00b4d8] tracking-[0.15em] uppercase">
                     SENIOR PROJECT
@@ -267,7 +261,6 @@ function App() {
                     Developed a multi-class machine learning pipeline to classify PM2.5 into 5 levels based on Thai Air Quality Standards. Handled meteorological datasets, engineered features using trigonometric encoding, and solved severe class imbalance with Borderline-SMOTE. Through comprehensive comparative research against various ML and DL algorithms, the Extra Trees ensemble was proven to be the most effective, achieving 92.7% Accuracy and 99.3% ROC-AUC.
                   </p>
                   
-                  {/* ปุ่ม Tag แบบขอบใส (Ghost Buttons) */}
                   <div className="flex flex-wrap gap-3 pt-2 pb-6">
                     {['Python', 'Scikit-Learn', 'SMOTE', 'Data Pipeline'].map(tag => (
                       <span key={tag} className="text-sm font-light px-4 py-1.5 bg-transparent border border-zinc-600 rounded-full text-zinc-300 hover:border-[#00b4d8]/50 hover:text-white transition-colors cursor-default">
@@ -276,7 +269,6 @@ function App() {
                     ))}
                   </div>
                   
-                  {/* ลิงก์ View Source Code */}
                   <a href="https://github.com/peerachetkns/PM2.5" target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-light text-white hover:text-[#00b4d8] transition-colors group/link">
                     View Source Code 
                     <svg className="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
@@ -286,7 +278,6 @@ function App() {
                 </motion.div>
               </div>
 
-              {/* Deep Dive Grid - ปรับหัวข้อแรกให้มีคำว่า ETL/Pipeline */}
               <motion.div variants={fadeUp} className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-zinc-800/50 p-6 rounded-xl border border-white/5 hover:border-[#00b4d8]/30 transition-all">
                   <div className="text-[#00b4d8] mb-4">
@@ -323,13 +314,94 @@ function App() {
             {/* Divider */}
             <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
 
-            {/* Project 2 (Standard Size - Expanded & Brightened) */}
+            {/* Project 2: Credit Scoring Model (สลับเลย์เอาต์ให้รูปภาพอยู่ด้านขวา) */}
+            <motion.div 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.1 }}
+              variants={staggerContainer}
+              className="group"
+            >
+              <div className="flex flex-col md:flex-row-reverse gap-12 items-start mb-12">
+                
+                {/* อย่าลืมนำรูปภาพมาใส่ในโฟลเดอร์ public ด้วยชื่อ CreditScoring.png */}
+                <motion.div variants={fadeUp} className="w-full md:w-[55%] aspect-video bg-[#1a1a1c] rounded-xl overflow-hidden border border-zinc-700/50 relative shadow-lg">
+                  <img 
+                    src="/Credit Scoring Model.jpeg" 
+                    alt="Credit Scoring Model" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                  />
+                </motion.div>
+                
+                <motion.div variants={fadeUp} className="w-full md:w-[45%] space-y-5 pt-2">
+                  <div className="text-xs font-semibold text-[#00b4d8] tracking-[0.15em] uppercase">
+                    DATA SCIENCE / ML PROJECT
+                  </div>
+                  <h3 className="text-3xl font-normal text-white">Credit Scoring Model</h3>
+                  <p className="text-zinc-300 leading-relaxed font-light text-base">
+                    Developed a Logistic Regression model to predict the Probability of Default for loan applicants. Executed feature engineering and applied Weight of Evidence (WOE) and Information Value (IV) to evaluate predictive power. Translated technical metrics into actionable business strategies by establishing a Score Grading framework and simulating operational cut-off points.
+                  </p>
+                  
+                  <div className="flex flex-wrap gap-3 pt-2 pb-6">
+                    {['Python', 'Logistic Regression', 'WOE & IV', 'Business Analytics'].map(tag => (
+                      <span key={tag} className="text-sm font-light px-4 py-1.5 bg-transparent border border-zinc-600 rounded-full text-zinc-300 hover:border-[#00b4d8]/50 hover:text-white transition-colors cursor-default">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  
+                  <a href="#" className="inline-flex items-center text-sm font-light text-white hover:text-[#00b4d8] transition-colors group/link">
+                    View Project Detail
+                    <svg className="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                    </svg>
+                  </a>
+                </motion.div>
+              </div>
+
+              <motion.div variants={fadeUp} className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="bg-zinc-800/50 p-6 rounded-xl border border-white/5 hover:border-[#00b4d8]/30 transition-all">
+                  <div className="text-[#00b4d8] mb-4">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9zm3.75 11.625a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"></path></svg>
+                  </div>
+                  <h4 className="text-white font-medium mb-2">Data Processing & EDA</h4>
+                  <p className="text-zinc-400 text-sm font-light leading-relaxed">
+                    Conducted data preprocessing, handled missing values, and performed EDA on demographic distributions. Engineered the Debt Service Ratio (DSR) to enhance model predictive capability.
+                  </p>
+                </div>
+
+                <div className="bg-zinc-800/50 p-6 rounded-xl border border-white/5 hover:border-[#00b4d8]/30 transition-all">
+                  <div className="text-[#00b4d8] mb-4">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"></path></svg>
+                  </div>
+                  <h4 className="text-white font-medium mb-2">WOE & IV Transformation</h4>
+                  <p className="text-zinc-400 text-sm font-light leading-relaxed">
+                    Evaluated feature predictive power using Weight of Evidence and Information Value. Mitigated multicollinearity by analyzing P-values and Variance Inflation Factor (VIF).
+                  </p>
+                </div>
+
+                <div className="bg-zinc-800/50 p-6 rounded-xl border border-white/5 hover:border-[#00b4d8]/30 transition-all">
+                  <div className="text-[#00b4d8] mb-4">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                  </div>
+                  <h4 className="text-white font-medium mb-2">Business Strategy & Grading</h4>
+                  <p className="text-zinc-400 text-sm font-light leading-relaxed">
+                    Evaluated models via ROC-AUC and Gini metrics, and formulated actionable business strategies by establishing a Score Grading system (A-G) and cut-off points to optimize approval rates.
+                  </p>
+                </div>
+              </motion.div>
+            </motion.div>
+
+            {/* Divider */}
+            <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+
+            {/* Project 3: META-Master System (Standard Size - Expanded & Brightened) */}
             <motion.div 
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
               variants={staggerContainer}
-              className="flex flex-col md:flex-row-reverse gap-12 items-center group"
+              className="flex flex-col md:flex-row gap-12 items-center group"
             >
               <motion.div variants={fadeUp} className="w-full md:w-[60%] aspect-[16/10] bg-zinc-900 rounded-2xl overflow-hidden border border-white/10 relative shadow-2xl">
                  <img 
@@ -358,7 +430,7 @@ function App() {
         </div>
       </section>
 
-            {/* Contact Section */}
+      {/* Contact Section */}
       <motion.section 
         id="contact" 
         initial={{ opacity: 0, y: 50 }}
