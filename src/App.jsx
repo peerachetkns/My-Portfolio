@@ -269,7 +269,7 @@ function App() {
                     ))}
                   </div>
                   
-                  <a href="https://github.com/peerachetkns/PM2.5" target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-light text-white hover:text-[#00b4d8] transition-colors group/link">
+                  <a href="https://github.com/peerachetkns/PM2.5" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm font-light text-white hover:text-[#00b4d8] transition-colors group/link">
                     View Source Code 
                     <svg className="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
@@ -314,7 +314,7 @@ function App() {
             {/* Divider */}
             <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
 
-            {/* Project 2: Credit Scoring Model (สลับเลย์เอาต์ให้รูปภาพอยู่ด้านขวา) */}
+            {/* Project 2: Credit Scoring Model */}
             <motion.div 
               initial="hidden"
               whileInView="visible"
@@ -324,7 +324,6 @@ function App() {
             >
               <div className="flex flex-col md:flex-row-reverse gap-12 items-start mb-12">
                 
-                {/* อย่าลืมนำรูปภาพมาใส่ในโฟลเดอร์ public ด้วยชื่อ CreditScoring.png */}
                 <motion.div variants={fadeUp} className="w-full md:w-[55%] aspect-video bg-[#1a1a1c] rounded-xl overflow-hidden border border-zinc-700/50 relative shadow-lg">
                   <img 
                     src="/Credit Scoring Model.jpeg" 
@@ -350,8 +349,14 @@ function App() {
                     ))}
                   </div>
                   
-                  <a href="https://github.com/peerachetkns/Credit-Scoring-Model" target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-light text-white hover:text-[#00b4d8] transition-colors group/link">
-                    View Project Detail
+                  {/* Updated Link Section */}
+                  <a 
+                    href="https://github.com/peerachetkns/Credit-Scoring-Model" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center text-sm font-light text-white hover:text-[#00b4d8] transition-colors group/link"
+                  >
+                    View Source Code
                     <svg className="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                     </svg>
@@ -395,7 +400,7 @@ function App() {
             {/* Divider */}
             <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
 
-            {/* Project 3: META-Master System (Standard Size - Expanded & Brightened) */}
+            {/* Project 3: META-Master System */}
             <motion.div 
               initial="hidden"
               whileInView="visible"
