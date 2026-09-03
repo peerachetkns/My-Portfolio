@@ -350,7 +350,7 @@ function App() {
                     ))}
                   </div>
                   
-                  <a href="#" className="inline-flex items-center text-sm font-light text-white hover:text-[#00b4d8] transition-colors group/link">
+                  <a href="https://github.com/peerachetkns/Credit-Scoring-Model" target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-light text-white hover:text-[#00b4d8] transition-colors group/link">
                     View Project Detail
                     <svg className="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
