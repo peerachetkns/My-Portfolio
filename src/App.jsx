@@ -34,9 +34,8 @@ function App() {
               <a href="#projects" className="hover:text-[#00b4d8] transition-colors duration-300">Projects</a>
               <a href="#contact" className="hover:text-[#00b4d8] transition-colors duration-300">Contact</a>
             </div>
-            {/* Resume Button */}
             <a 
-              href="/Peerachet-resume.pdf"
+              href="/PeerachetResume.pdf"
               target="_blank" 
               rel="noopener noreferrer"
               className="border border-[#00b4d8] text-[#00b4d8] px-4 py-1.5 rounded-full hover:bg-[#00b4d8] hover:text-zinc-900 transition-all duration-300 shadow-[0_0_10px_rgba(0,180,216,0.2)]"
@@ -74,7 +73,6 @@ function App() {
           </motion.div>
         </motion.div>
         
-        {/* Profile picture */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -117,7 +115,6 @@ function App() {
             </p>
           </motion.div>
           
-          {/* Education Card */}
           <motion.div variants={fadeUp} className="bg-zinc-700/40 backdrop-blur-sm p-10 rounded-2xl border border-white/10 shadow-xl hover:shadow-2xl hover:border-[#00b4d8]/30 transition-all duration-500">
             <div className="flex items-center gap-3 mb-6 border-b border-white/10 pb-4">
               <svg className="w-6 h-6 text-[#00b4d8]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
@@ -349,7 +346,6 @@ function App() {
                     ))}
                   </div>
                   
-                  {/* Updated Link Section */}
                   <a 
                     href="https://github.com/peerachetkns/Credit-Scoring-Model" 
                     target="_blank" 
@@ -406,7 +402,7 @@ function App() {
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
               variants={staggerContainer}
-              className="flex flex-col md:flex-row gap-12 items-center group"
+              className="flex flex-col md:flex-row gap-12 items-center group mb-12"
             >
               <motion.div variants={fadeUp} className="w-full md:w-[60%] aspect-[16/10] bg-zinc-900 rounded-2xl overflow-hidden border border-white/10 relative shadow-2xl">
                  <img 
@@ -426,8 +422,86 @@ function App() {
                 <div className="flex gap-3 pb-4">
                   <span className="text-xs font-light px-3 py-1 bg-zinc-800 border border-white/10 rounded-full text-zinc-200">Power Apps</span>
                   <span className="text-xs font-light px-3 py-1 bg-zinc-800 border border-white/10 rounded-full text-zinc-200">Power Automate</span>
-                  <span className="text-xs font-light px-3 py-1 bg-zinc-800 border border-white/10 rounded-full text-zinc-200">SharePoint List</span>
+                  <span className="text-xs font-light px-3 py-1 bg-zinc-800 border border-white/10 rounded-full text-zinc-200">SharePoint</span>
                 </div>
+              </motion.div>
+            </motion.div>
+
+            {/* Divider */}
+            <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+
+            {/* Project 4: Real-Time Object Detection */}
+            <motion.div 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              variants={staggerContainer}
+              className="flex flex-col md:flex-row-reverse gap-12 items-center group mb-12"
+            >
+              <motion.div variants={fadeUp} className="w-full md:w-[60%] aspect-[16/10] bg-zinc-900 rounded-2xl overflow-hidden border border-white/10 relative shadow-2xl">
+                 <img 
+                   src="/OBJ_detect.png" 
+                   alt="Real-Time Object Detection" 
+                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                 />
+              </motion.div>
+              
+              <motion.div variants={fadeUp} className="w-full md:w-[40%] space-y-6">
+                <span className="text-xs font-medium text-[#00b4d8] tracking-[0.2em]">COMPUTER VISION</span>
+                <h3 className="text-3xl font-light text-white group-hover:text-[#00b4d8] transition-colors duration-300">Real-Time Object Detection</h3>
+                <p className="text-zinc-300 leading-relaxed font-light">
+                  Developed a real-time object detection system utilizing Python and OpenCV's DNN module. Integrated pre-trained Deep Learning architectures (MobileNet SSD, VGG SSD) to process video streams and classify up to 20 object categories dynamically with precise bounding boxes and confidence scores.
+                </p>
+                <div className="flex flex-wrap gap-3 pb-4">
+                  <span className="text-xs font-light px-3 py-1 bg-zinc-800 border border-white/10 rounded-full text-zinc-200">Python</span>
+                  <span className="text-xs font-light px-3 py-1 bg-zinc-800 border border-white/10 rounded-full text-zinc-200">OpenCV DNN</span>
+                  <span className="text-xs font-light px-3 py-1 bg-zinc-800 border border-white/10 rounded-full text-zinc-200">MobileNet SSD</span>
+                </div>
+                <a href="https://github.com/peerachetkns/Real-Time-Object-Detection-project" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm font-light text-white hover:text-[#00b4d8] transition-colors group/link mt-2">
+                    View Source Code 
+                    <svg className="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                    </svg>
+                </a>
+              </motion.div>
+            </motion.div>
+
+            {/* Divider */}
+            <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+
+            {/* Project 5: Face Detection System */}
+            <motion.div 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              variants={staggerContainer}
+              className="flex flex-col md:flex-row gap-12 items-center group"
+            >
+              <motion.div variants={fadeUp} className="w-full md:w-[60%] aspect-[16/10] bg-zinc-900 rounded-2xl overflow-hidden border border-white/10 relative shadow-2xl">
+                 <img 
+                   src="/Result.jpeg" 
+                   alt="Hybrid Face Detection System" 
+                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                 />
+              </motion.div>
+              
+              <motion.div variants={fadeUp} className="w-full md:w-[40%] space-y-6">
+                <span className="text-xs font-medium text-[#00b4d8] tracking-[0.2em]">COMPUTER VISION</span>
+                <h3 className="text-3xl font-light text-white group-hover:text-[#00b4d8] transition-colors duration-300">Hybrid Face Detection System</h3>
+                <p className="text-zinc-300 leading-relaxed font-light">
+                  Engineered a dual-mode detection system supporting both static images and live webcam feeds. Combined a robust Deep Learning model (ResNet-10 SSD) for facial recognition with traditional Haar Cascades for detecting eyes and cat faces, ensuring high accuracy and real-time performance.
+                </p>
+                <div className="flex flex-wrap gap-3 pb-4">
+                  <span className="text-xs font-light px-3 py-1 bg-zinc-800 border border-white/10 rounded-full text-zinc-200">Python</span>
+                  <span className="text-xs font-light px-3 py-1 bg-zinc-800 border border-white/10 rounded-full text-zinc-200">ResNet-10 SSD</span>
+                  <span className="text-xs font-light px-3 py-1 bg-zinc-800 border border-white/10 rounded-full text-zinc-200">Haar Cascade</span>
+                </div>
+                <a href="https://github.com/peerachetkns/Face-Detection" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm font-light text-white hover:text-[#00b4d8] transition-colors group/link mt-2">
+                    View Source Code 
+                    <svg className="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                    </svg>
+                </a>
               </motion.div>
             </motion.div>
 
@@ -447,26 +521,23 @@ function App() {
         <h2 className="text-4xl font-light mb-8 text-white">Let's <span className="font-semibold">Connect</span></h2>
         <p className="text-zinc-400 mb-12 font-light leading-relaxed max-w-2xl mx-auto">
           I'm currently seeking opportunities in AI/ML Engineer, Data Engineering, and Data Science. 
-          Feel free to reach out if you're looking for a dedicated engineer to join your team.
+          Feel free to reach out if you're looking for a dedicated team member.
         </p>
         
         {/* Contact Links */}
         <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-6 md:gap-8 text-lg font-light">
-          {/* Email */}
           <a href="mailto:peerachetkhanitson@gmail.com" className="text-white hover:text-[#00b4d8] transition-colors border-b border-transparent hover:border-[#00b4d8] pb-1">
             peerachetkhanitson@gmail.com
           </a>
           
           <span className="hidden md:inline text-zinc-600">|</span>
           
-          {/* Phone */}
           <span className="text-zinc-200">092-825-5299</span>
           
           <span className="hidden md:inline text-zinc-600">|</span>
           
-          {/* GitHub */}
           <a href="https://github.com/peerachetkns" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#00b4d8] transition-colors flex items-center gap-2 group">
-            <svg className="w-5 h-5 text-zinc-400 group-hover:text-[#00b4d8] transition-colors" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <svg className="w-5 h-5 text-zinc-400 group-hover:text-[#00b4d8] transition-colors" fill="currentColor" viewBox="0 0 24 24" aria-hidden="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
             </svg>
             GitHub
@@ -474,7 +545,6 @@ function App() {
 
           <span className="hidden md:inline text-zinc-600">|</span>
           
-          {/* LinkedIn */}
           <a href="https://www.linkedin.com/in/peerachet-khanitson-073436404/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#00b4d8] transition-colors flex items-center gap-2 group">
             <svg className="w-5 h-5 text-zinc-400 group-hover:text-[#00b4d8] transition-colors" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
