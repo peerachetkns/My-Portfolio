@@ -35,7 +35,7 @@ function App() {
               <a href="#contact" className="hover:text-[#00b4d8] transition-colors duration-300">Contact</a>
             </div>
             <a 
-              href="/PeerachetResume.pdf"
+              href="/Peerachet.pdf"
               target="_blank" 
               rel="noopener noreferrer"
               className="border border-[#00b4d8] text-[#00b4d8] px-4 py-1.5 rounded-full hover:bg-[#00b4d8] hover:text-zinc-900 transition-all duration-300 shadow-[0_0_10px_rgba(0,180,216,0.2)]"
